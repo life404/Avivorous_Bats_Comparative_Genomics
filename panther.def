@@ -1,0 +1,24 @@
+Bootstrap: docker
+From:ubuntu:20.04
+
+
+%files
+	/home/panda2bat/TOOLS/pantherScore2.2	/usr/bin/pantherScore2.2
+
+%post
+	apt-get update && apt-get install -y perl hmmer
+
+%environment
+	export PERL5LIB=/usr/bin/pantherScore2.2/lib/
+	export PANTHER_HMM_LIBRARY=/usr/bin/panther_hmm
+	export PATH=$PATH:/usr/bin/pantherScore2.2/bin/
+
+%runscript
+	perl /usr/bin/pantherScore2.2/pantherScore2.2.pl -l $PANTHER_HMM_LIBRARY $@
+
+%labels
+	Auther: panda2bat
+	Version: 1.0
+	The singularity config of pantherScore2.2
+
+	
