@@ -150,16 +150,3 @@ python3 05.genome-scaffold.py --genome genome.fasta --hic_path hic_reads/ --ou_p
 
 The `cmd_run_multiple` function in `utils.py` supports checkpointing: if a `{check}.ok` file already exists in the output directory, that step is skipped automatically.
 
-## Depositing on Dryad
-
-### Recommended Upload Contents
-
-| Type | Contents | Notes |
-|------|----------|-------|
-| **Code** | All `.py` scripts and the `utils/` directory | Ensures reproducibility |
-| **Container definitions** | `toga.def`, `panther.def` | Singularity image build files |
-| **Config files** | Step-specific config templates (e.g. `.nextPolish.config`) | Include if present in the repository |
-| **Raw/processed data** | Genome assembly, annotation GFF3/GTF, protein/CDS sequences | Release per journal requirements |
-| **Intermediate results** | OrthoFinder output, phylogenetic trees, CodeML results, etc. | Optional; useful for reviewer verification |
-| **Documentation** | This README | Usage guide for data and code |
-
