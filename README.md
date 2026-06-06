@@ -2,7 +2,7 @@
 
 **Associated manuscript:** *Comparative Genomics Reveals Convergent Evolution Between Avivorous Bats (*Ia io* and *Nyctalus aviator*)*
 
-This repository contains the full workflow for genome assembly, annotation, and evolutionary analysis of the avivorous bats *Ia io* and *Nyctalus aviator*, supporting the comparative genomics study above. It is intended for deposition on [Dryad](https://datadryad.org/) alongside publication.
+This repository contains the full workflow for genome assembly, annotation, and evolutionary analysis of the avivorous bats *Ia io* and *Nyctalus aviator*, supporting the comparative genomics study above. 
 
 ## Overview
 
@@ -163,64 +163,3 @@ The `cmd_run_multiple` function in `utils.py` supports checkpointing: if a `{che
 | **Intermediate results** | OrthoFinder output, phylogenetic trees, CodeML results, etc. | Optional; useful for reviewer verification |
 | **Documentation** | This README | Usage guide for data and code |
 
-### Upload Procedure
-
-1. **Register** an account at [https://datadryad.org/](https://datadryad.org/).
-2. **Create a dataset** via "Submit a dataset"; provide title, abstract, keywords, and associated manuscript DOI (if available).
-3. **Upload files**:
-   - Package this repository as `avivorous_bat_pipeline.zip` or upload a Git archive;
-   - Use Dryad's large-file upload options for genome FASTA, BAM, and similar files;
-   - Individual files should not exceed 300 GB (Dryad limit; contact Dryad support or use AWS S3 direct upload for larger files).
-4. **Complete metadata**:
-   - **Title**: *Comparative Genomics Reveals Convergent Evolution Between Avivorous Bats (Ia io and Nyctalus aviator)* — Data and analysis scripts
-   - **Keywords**: bat, genome assembly, Hi-C, gene annotation, comparative genomics
-   - **Methods**: Reference the analysis workflow table in this README
-   - **License**: [CC0](https://creativecommons.org/publicdomain/zero/1.0/) or [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) recommended
-5. **Link to journal**: If the manuscript is accepted, provide journal name and manuscript ID; Dryad can embargo data until publication.
-6. **Submit for review**: After curator approval, the dataset receives a permanent DOI for use in the Data Availability statement.
-
-### Data Availability Statement Template
-
-```
-The genome assembly, annotation files, and analysis scripts generated in
-"Comparative Genomics Reveals Convergent Evolution Between Avivorous Bats
-(Ia io and Nyctalus aviator)" are available in the Dryad Digital Repository:
-https://doi.org/10.5061/dryad.xxxxx (replace with the DOI assigned after upload).
-```
-
-## Citation
-
-If you use this pipeline or data, please cite the manuscript and this dataset DOI (to be added after Dryad upload):
-
-```
-[Author(s)]. (Year). Comparative Genomics Reveals Convergent Evolution Between
-Avivorous Bats (Ia io and Nyctalus aviator). [Journal name].
-https://doi.org/10.xxxx/xxxxx
-
-[Author(s)]. (Year). Data from: Comparative Genomics Reveals Convergent Evolution
-Between Avivorous Bats (Ia io and Nyctalus aviator). Dryad.
-https://doi.org/10.5061/dryad.xxxxx
-```
-
-### Key Tool Citations
-
-- **fastp**: Chen et al. (2018) *Bioinformatics*
-- **nextDenovo / nextPolish**: Hu et al. (2020) *Nature Communications*
-- **BUSCO**: Manni et al. (2021) *Molecular Biology and Evolution*
-- **EDTA**: Ou et al. (2019) *Nature Communications*
-- **BRAKER3**: Gabriel et al. (2024) *Nucleic Acids Research*
-- **OrthoFinder**: Emms & Kelly (2019) *Genome Biology*
-- **TOGA**: Kielbasa et al. (2023) *Nature Biotechnology*
-- **CAFE5**: Mendes et al. (2020) *Molecular Biology and Evolution*
-
-## License
-
-Code is recommended under [MIT License](https://opensource.org/licenses/MIT) or [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Genome data release should comply with journal policies and applicable species protection regulations.
-
-## Contact
-
-For questions, please contact: [author email]
-
----
-
-*Last updated: 2026-06-06*
