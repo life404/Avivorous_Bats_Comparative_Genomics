@@ -10,7 +10,7 @@ This pipeline supports *Comparative Genomics Reveals Convergent Evolution Betwee
 
 ## Experimental Design
 
-**Short description (for Dryad metadata):**
+**Short description:**
 
 > We collected tissue samples from two distantly related avivorous bats, *Ia io* and *Nyctalus aviator*, to investigate convergent genomic evolution associated with bird-eating ecology. For each species, we generated multi-platform sequencing data comprising short-read whole-genome sequencing, long-read sequencing, and Hi-C proximity ligation sequencing to assemble chromosome-level reference genomes. RNA sequencing was additionally performed to support transcript-based gene annotation. These genomic resources were used in comparative analyses with other bat species to examine synteny, gene family evolution, positive selection, and gene loss, with the goal of identifying molecular signatures of convergent adaptation to an avivorous diet.
 
